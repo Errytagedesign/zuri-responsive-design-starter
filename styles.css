@@ -411,7 +411,8 @@ div .openMenu {
 
 div.hero-section {
     background: #304353;
-    padding: 10rem;
+    padding: 3rem;
+    height: 80vh;
 }
     div.hero-content-heading {
         text-align: center;
@@ -424,7 +425,8 @@ div.hero-section {
         letter-spacing: 5px;
         font-weight: 300;
         color: #ffffff;
-        width: auto;
+        padding-top: 90px;
+        
     }
     
     div.hero-content-heading p {
@@ -443,12 +445,8 @@ div.hero-section {
         padding-top: 2rem;
     }
     
-    div.hero-content-btn a:hover {
-
-        color: white;
-        background: rgb(121, 3, 76);
-     
-    }
+   
+/*========subhero section =======*/
 
 
     div.hero-background {
@@ -464,39 +462,89 @@ div.hero-section {
         box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
         padding: 15px 40px;
         width: 1000px;
-        height: 500px;
+        height: 400px;
         position: relative;
         margin-top: 50px;
     }
     
-    div.background h4 {
-        padding: 2rem;
-        color: #555657;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-    
-    div.background p {
-        color: #A6A5AA;
-        padding-left: 2rem;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
+    div .background p {
+
+        text-align: justify;
+        font-size: 14px;
     }
     
     div.hero-background-pos {
         position: absolute;
-        margin-top: 50px;
-        bottom: -190px;
+        bottom: -150px;
         right: 0px;
         left: 30;
         background: #fff;
-        width: 140px;
-        height: 140px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     }
     
+
+    /*========Snapshot=======*/
+
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    div.snapshot-team p {
+        color: #A6A5AA;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        padding: 0.8rem 2rem;
+    }
+
+
+    div.footer {
+        padding: 1rem;
+    }
+
+    div.footer-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    
+    input[type="text"] {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        width: 80%;
+        outline: none;
+        border: 1px solid #bcc3c7;
+        background: transparent;
+        color: #f0f0f0;
+        font-size: 1rem;
+        border-radius: 2px;
+    }
+    
+    input[type="email"] {
+        margin-right: 10px;
+        padding: 10px 20px;
+        width: 80%;
+        outline: none;
+        border: 1px solid #bcc3c7;
+        background: transparent;
+        color: #f0f0f0;
+        font-size: 1rem;
+        border-radius: 2px;
+    }
+    
+    textarea {
+
+        width: 80%;
+    }
+    
+    
+  
 
 
 
