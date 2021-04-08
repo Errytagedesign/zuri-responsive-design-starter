@@ -8,7 +8,7 @@
 }
 
 
-/*======= navigation - desktop =====*/
+
 div .openMenu {
     display: none;
 }
@@ -36,20 +36,6 @@ ul.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
-}
-
-.hamburger {
-    background: transparent;
-    border: 0;
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-.hamburger:focus {
-
-    outline: none;
 }
 
 
@@ -375,6 +361,7 @@ div.footer h6 {
 
 @media screen and (max-width: 767px) {
 
+/*=========Hamburger ==========*/
     div .mainMenu {
         height: 220px;
         position: fixed;
@@ -417,13 +404,101 @@ div .openMenu {
     cursor: pointer;
 
     }
-}
 
-/*.nav-links li {
-    display: none;
-}
 
-.hamburger {
-    display: block;
+
+/*========hero section =======*/
+
+div.hero-section {
+    background: #304353;
+    padding: 10rem;
 }
+    div.hero-content-heading {
+        text-align: center;
+        
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 300;
+        color: #ffffff;
+        width: auto;
+    }
+    
+    div.hero-content-heading p {
+        text-align: center;
+        padding-top: 0.7rem;
+        color: #88949B;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+    
+    div.hero-content-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    
+    div.hero-content-btn a:hover {
+
+        color: white;
+        background: rgb(121, 3, 76);
+     
+    }
+
+
+    div.hero-background {
+        background: #f0f0f0;
+        padding: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.background {
+        background: #fff;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+        padding: 15px 40px;
+        width: 1000px;
+        height: 500px;
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    div.background h4 {
+        padding: 2rem;
+        color: #555657;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    div.background p {
+        color: #A6A5AA;
+        padding-left: 2rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    
+    div.hero-background-pos {
+        position: absolute;
+        margin-top: 50px;
+        bottom: -190px;
+        right: 0px;
+        left: 30;
+        background: #fff;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    
+
+
+
+
 }
