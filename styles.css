@@ -7,8 +7,20 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
+/*======= navigation - desktop =====*/
+div .openMenu {
+    display: none;
+}
+
+div .closeMenu {
+    display: none;
+}
+
+
 div.nav-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 6rem;
     width: 100vw;
@@ -25,6 +37,21 @@ ul.nav-links {
     margin: 0;
     padding: 0;
 }
+
+.hamburger {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+
+    outline: none;
+}
+
 
 ul li {
     margin: 0 2vw;
@@ -344,4 +371,59 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+
+    div .mainMenu {
+        height: 220px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        transition: top 1s ease;
+        display: none;
+        cursor: pointer;
+        color: #fff;
+        background: #e00434;
+        padding: 25;
+        box-shadow: 3px 3px 3px rgb(146, 146, 146);
+
+    }
+
+    ul li a {
+        line-height: 50px;
+        color: #fff;
+    }
+
+
+div .mainMenu .closeMenu {
+    display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+}
+
+div .openMenu {
+    display: block;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+
+    }
+}
+
+/*.nav-links li {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+}
 }
